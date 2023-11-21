@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+.homepage{
+    background-color: #ffffff;
+    position: relative;
+    padding-bottom: 10px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.upper-view{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    border-bottom: solid rgba(204, 196, 196, 0.301) 1px;
+    box-shadow: 0 0 5px #00000080;
+    z-index: 2;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin-left: 20px;
+}
+
+h2{
+    margin-left: 20px;
+    font-size: large;
+    margin-top: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.hamburger-icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6px 0;
+    gap: 3px;
+    margin-left: auto;
+    margin-right: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+.bars{
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: black;
+    border-radius: 1px;
+}
+
+.directory{
+    margin: 25px 0px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: solid rgba(75, 68, 68, 0.301) 1px;
+    font-weight: lighter;
+}
+
+.about{
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#message{
+    padding: 50px;
+}
+
+h5{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+h6{
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+
+button, div.button a{
+    color: white;
+    /* margin: 40px auto;  */
+    padding: 12px;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* width: 140px; */
+    background-color: rgb(2, 2, 73);
+    border: solid rgb(2, 2, 73) 1px ;
+    box-shadow:none;
+    border-radius: 3px;
+    /* margin: 0px 30px; */
+}
+
+div.button{
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+i{
+    margin-right: 6px;
+}
+
+
+.close button{
+    width: 40px;
+    margin: 0;
+    margin-left: auto;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: black;
+}
+
+.textboxes{
+    margin: 30px;
+
+}
+
+
+
+
+.horizontal{
+    width: 600px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.menu-link:not(:nth-child(7))::after{
+    content:'|';
+    margin: 0 8px;
+    border-style: 1px solid rgb(1, 1, 41);
+}
+
+.menu-link{
+    color: white;
+}
+
+.nav-links a{
+    color: black;
+}
+
+.hamburger-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.close{
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    
+}
+
+.overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(255, 0, 0, 0.411); */
+}
+
+.nav-links{
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    right: -400px;
+    background-color: white;
+    border-left: solid rgba(204, 196, 196, 0.301) 1px;
+    padding: 30px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 5px #00000080;
+
+}
+
+ul{
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+#hyphen::before{ 
+    content: '-';
+    padding: 20px; 
+} 
+
+.showlinks{
+    right: 0;
+
+}
+
+/* h4{
+    margin-bottom: 20px;
+    border-bottom: solid black 1px;
+} */
+
+
+@media screen and (max-width: 700px) {
+
+
+h1{
+    font-size: 16px;
+}
+.bars{
+    width: 25px;
+
+}
+
+.menu-link:not(:nth-child(7))::after{
+    content:'|';
+    border-style: 1px solid rgb(1, 1, 41);
+}
+
+.menu-link{
+    font-size: 14px;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+}
